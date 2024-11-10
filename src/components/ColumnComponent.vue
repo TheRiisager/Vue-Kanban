@@ -28,8 +28,6 @@
             <draggable
                 v-model="items"
                 group="items"
-                @start="drag=true"
-                @end="drag=false"
                 >
                 <template #item="{element, index}">
                     <Card :key="index" :item="element"></Card>
